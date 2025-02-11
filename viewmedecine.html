@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Medicines - Pharmacy Management</title>
+    <link rel="stylesheet" href="viewmedecine.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Pharmacy Management</h1>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="addmedecine.html">Add Medicine</a></li>
+                    <li><a href="view_medicines.html" class="active">View Medicines</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="view-medicines">
+            <h2>View Available Medicines</h2>
+            <p>Browse through our wide selection of medicines available for purchase. Click on any medicine for more details.</p>
+
+            <!-- Medicine List Section -->
+            <div class="medicine-list">
+                <div class="medicine-item">
+                    <img src="prastermol.avif" alt="Medicine 1">
+                    <h3>Paracetamol</h3>
+                    <p class="price">$5.00</p>
+                    <button class="view-details"><a href="detaitpracita.html">View Details</a></button>
+                </div>
+
+                <div class="medicine-item">
+                    <img src="biprofen.webp" alt="Medicine 2">
+                    <h3>Ibuprofen</h3>
+                    <p class="price">$8.00</p>
+                    <button class="view-details"><a href="detailbiprofen.html">View Details</a></button>
+                </div>
+
+                <div class="medicine-item">
+                    <img src="aspline.avif" alt="Medicine 3">
+                    <h3>Aspirin</h3>
+                    <p class="price">$3.50</p>
+                    <button class="view-details"><a href="detailaspline.html">View Details</a></button>
+                </div>
+
+                <!-- Add more medicine items here... -->
+            </div>
+
+            <!-- Pagination Section (Optional) -->
+            <div class="pagination">
+                <button class="prev">Previous</button>
+                <button class="next">Next</button>
+            </div>
+        </section>
+    </main>
+    <br><br>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Pharmacy Management. All Rights Reserved.</p>
+        <p>Contact us at: <a href="mailto:info@pharmacy.com">info@pharmacy.com</a></p>
+    </footer>
+</body>
+</html>

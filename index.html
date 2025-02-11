@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Pharmacy Management</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="addmedecine.html">Add Medicine</a></li>
+                    <li><a href="viewmedecine.html">View Medicines</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="welcome">
+            <h2>Welcome to Our Pharmacy</h2>
+            <p>We provide a wide variety of medicines and health products to keep you healthy and safe.</p>
+        </section>
+
+        <!-- Medicine Form Section -->
+        <section class="medicine-form">
+            <h2>Order Medicine</h2>
+            <form action="submit_order.php" method="POST">
+                <label for="medicine">Medicine Name:</label>
+                <input type="text" id="medicine" name="medicine" placeholder="Enter Medicine Name" required><br><br>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" placeholder="Enter Quantity" required><br><br>
+
+                <label for="address">Delivery Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter Address" required><br><br>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+
+        <!-- Featured Medicines Section -->
+        <section class="featured-medicines">
+            <h2>Featured Medicines</h2>
+            <div class="medicine-list">
+                <div class="medicine-item">
+                    <img src="medicine1.jpg" alt="Medicine 1">
+                    <p>Paracetamol</p>
+                    <p>$5.00</p>
+                </div>
+                <div class="medicine-item">
+                    <img src="medicine2.jpg" alt="Medicine 2">
+                    <p>Ibuprofen</p>
+                    <p>$8.00</p>
+                </div>
+                <div class="medicine-item">
+                    <img src="medicine3.jpg" alt="Medicine 3">
+                    <p>Aspirin</p>
+                    <p>$3.50</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Pharmacy Name. All Rights Reserved.</p>
+        <p>Contact us at: <a href="mailto:info@pharmacy.com">info@pharmacy.com</a></p>
+    </footer>
+</body>
+</html>

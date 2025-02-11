@@ -1,0 +1,163 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #2d9cdb;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    background-color: #1c7bb6;
+}
+
+/* Main Section */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* View Medicines Section */
+.view-medicines {
+    text-align: center;
+}
+
+.view-medicines h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.view-medicines p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Medicine List Styles */
+.medicine-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.medicine-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.medicine-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.medicine-item h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.medicine-item .price {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #2d9cdb;
+}
+
+.medicine-item .view-details {
+    background-color: #2d9cdb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.medicine-item .view-details:hover {
+    background-color: #1c7bb6;
+}
+
+/* Pagination Styles */
+.pagination {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pagination button {
+    background-color: #2d9cdb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.pagination button:hover {
+    background-color: #1c7bb6;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2d9cdb;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}

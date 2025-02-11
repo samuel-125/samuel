@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main Container */
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Medicine Details Section */
+.medicine-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.medicine-detail-item {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.medicine-img {
+    max-width: 80%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.medicine-info {
+    max-width: 100%;
+    text-align: left;
+}
+
+.medicine-info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.medicine-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.medicine-info p,
+.medicine-info ul {
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: bold;
+    color: #e68a2e;
+}
+
+.stock {
+    color: #888;
+}
+
+/* Buttons */
+button {
+    background-color: #f2a365;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e68a2e;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button.add-to-cart {
+    background-color: #4CAF50;
+    margin-left: 10px;
+}
+
+button.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+/* Reviews Section */
+.reviews {
+    margin-top: 50px;
+}
+
+.reviews h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.review {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.review h4 {
+    font-weight: bold;
+    color: #444;
+}
+
+.review p {
+    font-size: 1rem;
+    color: #666;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #f2a365;
+}
+
+.submit-review {
+    background-color: #f2a365;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-review:hover {
+    background-color: #e68a2e;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+footer a {
+    color: #f2a365;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

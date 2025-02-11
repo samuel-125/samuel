@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Pharmacy Management</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Pharmacy Management</h1>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="addmedecine.html">Add Medicine</a></li>
+                    <li><a href="viewmedecine.html">View Medicines</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us. We're here to help!</p>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form action="submit_contact.php" method="POST">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter subject" required><br><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea><br><br>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Pharmacy Location and Contact Info -->
+            <div class="contact-info">
+                <h3>Our Location</h3>
+                <p>We are located at:GISOZI</p>
+                <p><strong>Pharmacy Name:UMUTUZO Phyarmacy</strong></p>
+                <p>123 Main Street:76354, City:Kigali, Country:Rwanda</p>
+                <p>Postal Code: 12345</p>
+
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> <a href="mailto:upsami3@gmail.com">info@pharmacy.com</a></p>
+                <p><strong>Phone:</strong> +250 791105531</p>
+                <p><strong>Business Hours:24</strong></p>
+                <ul>
+                    <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
+                    <li>Saturday: 10:00 AM - 2:00 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Pharmacy Management. All Rights Reserved.</p>
+        <p>Contact us at: <a href="mailto:info@pharmacy.com">info@pharmacy.com</a></p>
+    </footer>
+</body>
+</html>

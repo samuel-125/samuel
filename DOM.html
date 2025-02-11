@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo">this is paragraph text</p>
+        <button type="button" onclick="myfun()">click me</button>
+<script>
+    function myfun()
+{
+    var text, parser, xmlDoc;
+    text = "<bookstore><book>"+
+    "<title>java</title>" +
+    "<author>james</author>" +
+    "<year>1991</year>" +
+    "<book>" +
+        "<title>DBMS</title>" +
+        "<author>Raghu</author>" +
+        "<year>1970</year>" +
+    "</book>" +
+    "</book></bookstore";
+    parser = new DOMParser();
+    xmlDoc = parser.parseFromString(text,"text/html");
+    document.getElementById("demo").innerHTML =
+    xmlDoc.getElementsByTagName("author")[0].childNodes[0].nodeValue;   
+}    
+</script>
+    </body>
+</html>

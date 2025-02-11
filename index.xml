@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<medicines>
+    <medicine>
+        <name>Paracetamol</name>
+        <price>5.00</price>
+        <description>A common pain reliever.</description>
+        <image>medicine1.jpg</image>
+    </medicine>
+    <medicine>
+        <name>Ibuprofen</name>
+        <price>8.00</price>
+        <description>Used for treating pain, fever, and inflammation.</description>
+        <image>medicine2.jpg</image>
+    </medicine>
+    <medicine>
+        <name>Aspirin</name>
+        <price>3.50</price>
+        <description>Commonly used to reduce fever and inflammation.</description>
+        <image>medicine3.jpg</image>
+    </medicine>
+</medicines>

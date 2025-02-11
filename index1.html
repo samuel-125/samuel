@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Medicines - Pharmacy Management</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Pharmacy Management</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="medicine-list">
+            <h2>Available Medicines</h2>
+            <div id="medicines-container"></div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Pharmacy Name. All Rights Reserved.</p>
+        <p>Contact us at: <a href="mailto:info@pharmacy.com">info@pharmacy.com</a></p>
+    </footer>
+
+    <script>
+        // Function to load and parse the XML file
+        function loadMedicines() {
+            fetch('medicines.xml')
+                .then(response => response.text())
+                .then(data => {
+                    const parser = new DOMParser()
+                    const xmlDoc = parser.parseFromString(data, "application/xml");
+                    const medicines = xmlDoc.getElementsByTagName('medicine');
+                    const container = document.getElementById('medicines-container');
+
+                    for (let i = 0; i < medicines.length; i++) {
+                        const medicine = medicines[i];
+                        const name = medicine.getElementsByTagName('name')[0].textContent;
+                        const price = medicine.getElementsByTagName('price')[0].textContent;
+                        const description = medicine.getElementsByTagName('description')[0].textContent;
+                        const image = medicine.getElementsByTagName('image')[0].textContent;
+
+                        // Create HTML structure for each medicine
+                        const medicineItem = document.createElement('div');
+                        medicineItem.classList.add('medicine-item');
+                        medicineItem.innerHTML = `
+                            <img src="${image}" alt="${name}">
+                            <p><strong>${name}</strong></p>
+                            <p>${description}</p>
+                            <p>$${price}</p>
+                        `;
+                        container.appendChild(medicineItem);
+                    }
+                })
+                .catch(error => console.error('Error loading the XML file:', error));
+        }
+
+        // Call the function when the page loads
+        window.onload = loadMedicines;
+    </script>
+    <iframe src="index.xml" xslt="stylesheet.xsl"></iframe>
+    
+    
+</body>
+</html>
